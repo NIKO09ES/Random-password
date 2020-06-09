@@ -13,7 +13,7 @@ function generatePassword() {
 
   var numlength = prompt("How many characters would you like your pasword to be?");
 
-  if(numlength < 8) {
+  if(numlength < 8 || numlength > 128) {
     alert("Your password must be at least 8 characters.");
   }
   else {
@@ -34,7 +34,6 @@ function generatePassword() {
     if (confirmSymbol){
       characters += symbol
     }
-    console.log(characters);
     if (!confirmUpper && !confirmLower && !confirmNumber && !confirmSymbol) {
       alert('you must choose at least one')
       generatePassword()
@@ -47,7 +46,6 @@ function generatePassword() {
   }
 }
 
-console.log(generatePassword());
 generatePassword()
 
 
