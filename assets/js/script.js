@@ -1,4 +1,6 @@
 // Assignment code here
+// I take some references to DariaNau/password-generator-js
+
 var lettersLower = "abcdefghijklmnopqrstuvwxyz";
 var lettersUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var number = "0123456789";
@@ -61,6 +63,5 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
