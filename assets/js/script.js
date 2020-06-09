@@ -46,7 +46,7 @@ function generatePassword() {
   }
 }
 
-generatePassword()
+// generatePassword()
 
 
 // Get references to the #generate element
