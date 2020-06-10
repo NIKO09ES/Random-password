@@ -1,5 +1,4 @@
 // Assignment code here
-// I take some references to DariaNau/password-generator-js
 
 var lettersLower = "abcdefghijklmnopqrstuvwxyz";
 var lettersUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -11,26 +10,26 @@ function generatePassword() {
   var characters = "";
   var result = "";
 
-  var numlength = prompt("How many characters would you like your pasword to be?");
+  var numlength = prompt("How many characters would you like your password to be?");
 
   if(numlength < 8 || numlength > 128) {
-    alert("Your password must be at least 8 characters.");
+    alert("Your password must have at least 8 characters or a maximun of 128.");
   }
   else {
 
-    var confirmLower = window.confirm("lower characters");
+    var confirmLower = window.confirm("Would you like your password to have lower case characters?");
     if (confirmLower){
       characters += lettersLower
     }
-    var confirmUpper = window.confirm("Upper characters");
+    var confirmUpper = window.confirm("Would you like your password to have upper case characters?");
     if (confirmUpper){
       characters += lettersUpper
     }
-    var confirmNumber = window.confirm("Numbers");
+    var confirmNumber = window.confirm("Would you like your password to have numbers?");
     if (confirmNumber){
       characters += number
     }
-    var confirmSymbol= window.confirm("Symbol");
+    var confirmSymbol= window.confirm("Would you like your password to have special characters?");
     if (confirmSymbol){
       characters += symbol
     }
