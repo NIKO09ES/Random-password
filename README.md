@@ -6,9 +6,9 @@ A website that offers generate a random password.
 ## Built with 
 * HTML
 * CSS
-* Js
+* JS
 
-## WEbsite
+## Website
 https://niko09es.github.io/Random-password/
 
 ## Overview activities
